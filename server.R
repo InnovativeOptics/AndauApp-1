@@ -7,16 +7,19 @@
 #    http://shiny.rstudio.com/
 #
 
-library(shiny)
-library(tidyverse)
+# these library packages have been moved to global.R 
+#library(shiny)
+#library(tidyverse)
 
 # Load Andau loupe data
-andau_data <- readxl::read_excel("andau_loupe_data.xlsx")
+#commented out, now using Google Drive (in global.R file)
+#andau_data <- readxl::read_excel("andau_loupe_data.xlsx")
 
 # Load dental data
-dental_data <- readxl::read_excel("Dental_data.xlsx")%>%
-  filter(`Laser Mfg` != "") %>%
-  mutate(VLT = scales::percent(as.numeric(VLT)))
+#commented out, now using Google Drive (in global.R file)
+#dental_data <- readxl::read_excel("Dental_data.xlsx")%>%
+#  filter(`Laser Mfg` != "") %>%
+#  mutate(VLT = scales::percent(as.numeric(VLT)))
 
 
 shinyServer(function(input, output, session) {

@@ -1,0 +1,13 @@
+name: AndauAppTest
+title: AndauAppTest
+username: inva
+account: inva
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 12845720
+bundleId: 9151209
+url: https://inva.shinyapps.io/AndauAppTest/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: andau_loupe_data.xlsx|Dental_data.xlsx
